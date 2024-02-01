@@ -1,0 +1,52 @@
+Part - 2:
+
+
+Answer:
+
+Given conditions are: 
+● Die A cannot have more than 4 Spots on a face.
+● Die A may have multiple faces with the same number of spots.
+● Die B can have as many spots on a face as necessary i.e. even more than 6.
+
+We have already calculated the probabilities of all the sums (from 2 to 12) obtained by the outcomes of two dice.
+
+The probabilities of all the occurances should be same for the new dice A and B.
+So calculate the occurances of the sum for the probabilities on new dices.
+
+Then based on that, manipulate the array B, so that the occurances can be same.
+
+If able to create new dices, done: else not possible.
+
+---------------------------------------------------
+Original occurances:
+
+    dieA = { 1, 2, 3, 4, 5, 6 }; // Original dieA.
+    dieB = { 1, 2, 3, 4, 5, 6 }; // Original dieB.
+         
+        So the sum of outcomes is given below:
+
+        | 2  3  4  5  6  7  |
+        | 3  4  5  6  7  8  |
+        | 4  5  6  7  8  9  | 
+        | 5  6  7  8  9  10 |
+        | 6  7  8  9  10 11 |
+        | 7  8  9  10 11 12 |
+
+    Let's change the dice:
+
+    dieA = { 1, 2, 3, 4, 4, 4 }; // new dieA.
+    dieB = { 1, 2, 3, 4, 7, 8 }; // new dieB.
+
+        So the sum of outcomes is given below:
+
+        | 2  3  4  5  6  7  |
+        | 3  4  5  6  7  8  |
+        | 4  5  6  7  8  9  | 
+        | 5  6  7  8  11 12 |
+        | 5  6  7  8  11 12 |
+        | 5  6  7  8  11 12 |
+
+    Now compare old and new occurances. occurances are different, so change the matrix in the same way,
+    and try another combination.
+
+    If there is not any combination, then the dices cannnot be generated.

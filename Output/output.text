@@ -1,0 +1,24 @@
+The total number of combinations are: 36
+
+
+Combinations Distribution:
+2   3   4   5   6   7 
+3   4   5   6   7   8 
+4   5   6   7   8   9 
+5   6   7   8   9   10 
+6   7   8   9   10  11 
+7   8   9   10  11  12 
+
+
+The probability of all the sums are: 
+P(Sum = 2) = 1/36
+P(Sum = 3) = 2/36
+P(Sum = 4) = 3/36
+P(Sum = 5) = 4/36
+P(Sum = 6) = 5/36
+P(Sum = 7) = 6/36
+P(Sum = 8) = 5/36
+P(Sum = 9) = 4/36
+P(Sum = 10) = 3/36
+P(Sum = 11) = 2/36
+P(Sum = 12) = 1/36

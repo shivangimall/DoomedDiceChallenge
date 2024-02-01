@@ -1,0 +1,43 @@
+Part - 1:
+
+
+Q-1: How many total combinations are possible? Show the math along with the code!
+Answer:  The total possible combinations are equal to the number of faces dice 1 has 
+    	multiplied by the number of faces dice 2 has.
+        So, here both the dice are having 6 faces. 
+        Hence, the total number of combination: 6 * 6 = 36
+
+
+Q-2.  Calculate and display the distribution of all possible combinations that can be
+        obtained when rolling both Die A and Die B together. Show the math along with the code!
+        Hint: A 6 x 6 Matrix.
+
+Answer:   The distribution of all possible combination is the sum of the numbers obtained from rilling two dice for 
+            each outcome/ combination obtained.
+        For example: The numbers obtained on rolling two dice are 4 & 2, so the sum of the outcomes is 6 (4+2).
+        In this distribution, calculate the same for every combination and represent in the matrix form.
+
+         dieA = { 1, 2, 3, 4, 5, 6 }; // Original dieA.
+         dieB = { 1, 2, 3, 4, 5, 6 }; // Original dieB.
+         
+        So the sum of outcomes is given below:
+
+        | 2  3  4  5  6  7  |
+        | 3  4  5  6  7  8  |
+        | 4  5  6  7  8  9  | 
+        | 5  6  7  8  9  10 |
+        | 6  7  8  9  10 11 |
+        | 7  8  9  10 11 12 |
+
+
+
+Q-3. Calculate the Probability of all Possible Sums occurring among the number of combinations from 2 to 12.
+    Example: P(Sum = 2) = 1/X as there is only one combination possible to obtain
+    Sum = 2. Die A = Die B = 1.
+
+Answer: The probability of all possible sums, P(sums) = number of time a sum occurs / total number of combinations
+
+	For example: if sum = 3, then there can be two possibilities, i.e., [{1, 2}, {2, 1}]
+    So, 3 occured 2 times out of 36.
+	
+	P(sum) =  2 / 36
